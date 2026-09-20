@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>Birthday Surprise ✦</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+
+        <div id="stars"></div>
+    </div>
+
+    <!-- VFX LAYERS -->
+    <div id="particles"></div>
+    <div id="confetti"></div>
+    <div id="fireworks"></div>
+
+    <div id="flash"></div>
+
+    <!-- MUSIC -->
+    <button id="musicButton" class="floating-button">
+        ♫
+    </button>
+
+
+    <main class="app">
+
+
+        <!-- ========================= -->
+        <!-- CAKE SCREEN -->
+        <!-- ========================= -->
+
+        <section id="cakeScreen" class="screen active">
+
+            <div class="eyebrow">
+                A LITTLE SURPRISE
+            </div>
+
+            <h1 class="main-title">
+                Happy Birthday
+            </h1>
+
+            <p class="sub-title">
+                Ada sesuatu yang menunggumu...
+            </p>
+
+
+            <div id="cakeButton" class="cake-container">
+
+                <div class="cake-glow"></div>
+
+                <div class="cake">
+
+                    <div class="candle candle-1">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle candle-2">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle candle-3">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="cake-top"></div>
+
+                    <div class="cream">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="cake-body"></div>
+
+                    <div class="cake-decoration">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="click-hint">
+                ✦ KLICK THE CAKE ✦
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- NAME SCREEN -->
+        <!-- ========================= -->
+
+        <section id="nameScreen" class="screen">
+
+            <div class="glass-card">
+
+                <div class="step">
+                    STEP 01
+                </div>
+
+                <h2>
+                    Siapa namamu?
+                </h2>
+
+                <p>
+                    Masukkan nama supaya kejutan ini
+                    terasa lebih personal.
+                </p>
+
+                <input
+                    id="nameInput"
+                    class="text-input"
+                    type="text"
+                    maxlength="30"
+                    placeholder="Masukan nama mu..."
+                    autocomplete="off"
+                >
+
+                <button id="nameNext" class="gradient-button">
+                    CONTINUE
+                    <span>→</span>
+                </button>
+
+                <div id="nameError" class="error">
+                    Nama belum diisi.
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- AGE SCREEN -->
+        <!-- ========================= -->
+
+        <section id="ageScreen" class="screen">
+
+            <div class="glass-card">
+
+                <div class="step">
+                    STEP 02
+                </div>
+
+                <h2>
+                    Masukkan usiamu
+                </h2>
+
+                <p>
+                    Pilih umurmu sekarang.
+                </p>
+
+
+                <div class="age-selector">
+
+                    <button
+                        id="ageUp"
+                        class="age-arrow"
+                    >
+                        ^
+                    </button>
+
+                    <div
+                        id="ageNumber"
+                        class="age-number"
+                    >
+                        0
+                    </div>
+
+                    <button
+                        id="ageDown"
+                        class="age-arrow"
+                    >
+                        ⌄
+                    </button>
+
+                </div>
+
+
+                <div class="age-label">
+                    YEARS OLD
+                </div>
+
+
+                <button
+                    id="ageNext"
+                    class="gradient-button"
+                >
+                    CONTINUE
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- ENVELOPE SCREEN -->
+        <!-- ========================= -->
+
+        <section id="envelopeScreen" class="screen">
+
+            <div class="eyebrow">
+                SOMETHING SPECIAL
+            </div>
+
+            <h2 class="envelope-title">
+                Untuk
+                <span id="envelopeName">
+                    kamu
+                </span>
+            </h2>
+
+            <p class="sub-title">
+                Ada sebuah surat kecil untukmu...
+            </p>
+
+
+            <div
+                id="envelopeButton"
+                class="envelope-wrapper"
+            >
+
+                <div class="envelope-shadow"></div>
+
+                <div class="envelope">
+
+                    <div class="envelope-back"></div>
+
+                    <div class="letter-paper">
+
+                        <div class="paper-glow"></div>
+
+                        <span>
+                            ✦
+                        </span>
+
+                    </div>
+
+                    <div class="envelope-left"></div>
+                    <div class="envelope-right"></div>
+
+                    <div class="envelope-bottom"></div>
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="seal">
+                        ♥
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="click-hint">
+                ✦ OPEN THE LETTER ✦
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- LETTER SCREEN -->
+        <!-- ========================= -->
+
+        <section id="letterScreen" class="screen letter-screen">
+
+            <div class="letter-card">
+
+                <div class="letter-top">
+
+                    <div class="letter-star">
+                        ✦
+                    </div>
+
+                    <div class="letter-label">
+                        A LETTER FOR YOU
+                    </div>
+
+                </div>
+
+
+                <h2>
+                    Happy Birthday,
+                    <span id="letterName">
+                        kamu
+                    </span>.
+                </h2>
+
+
+                <div id="letterText" class="letter-text"></div>
+
+
+                <div class="letter-signature">
+                    <span>With love,</span>
+                    <strong>Someone who wishes you well ✦</strong>
+                </div>
+
+
+                <button
+                    id="replayButton"
+                    class="gradient-button"
+                >
+                    REPLAY SURPRISE
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
